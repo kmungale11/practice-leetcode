@@ -1,4 +1,4 @@
-package leetcode.sort.easy;
+package leetcode.sort.basic;
 
 public class QuickSort {
 
