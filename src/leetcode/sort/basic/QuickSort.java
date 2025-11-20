@@ -2,10 +2,9 @@ package leetcode.sort.basic;
 
 public class QuickSort {
 
-    public int[] sort(int[] arr) {
-        if(arr == null || arr.length <= 1) return arr;
+    public void sort(int[] arr) {
+        if(arr == null || arr.length <= 1) return;
         quickSort(0, arr.length-1, arr);
-        return arr;
     }
 
     private void quickSort(int low, int high, int[] arr) {
@@ -37,6 +36,8 @@ public class QuickSort {
 
     public static void main(String[] args) {
         QuickSort sort = new QuickSort();
-        sort.sort(new int[]{5,2,1,3,4});
+        int[] arr = new int[]{5,2,1,3,4};
+        sort.sort(arr);
+        System.out.println("sorted");
     }
 }
